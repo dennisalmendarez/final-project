@@ -7,8 +7,6 @@ const doc = {
     },
     host: "https://final-project-cb6l.onrender.com",
     schemes: ['https'],
-    consumes: ["application/json"],
-    produces: ["application/json"],
 };
 
 const outputFile = './swagger.json';
