@@ -5,7 +5,7 @@ const doc = {
         title: "stores API",
         description: "API for managing stores.",
     },
-    host: "https://final-project-cb6l.onrender.com",
+    host: "final-project-cb6l.onrender.com",
     schemes: ['https'],
 };
 
