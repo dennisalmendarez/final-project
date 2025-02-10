@@ -1,4 +1,3 @@
-const passport = require('passport');
 const { route } = require('./swagger');
 
 const router = require('express').Router();
