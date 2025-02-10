@@ -17,8 +17,8 @@ const validateRequest = (req, res, next) => {
 
 router.get('/', deliveryController.getAllDeliveries);
 router.get('/:id', deliveryController.getSingleDelivery);
-router.post('/', validateDelivery.createDelivery, isAuthenticated, validateRequest, deliveryController.createDelivery);
-router.put('/:id', validateDelivery.updateDelivery, isAuthenticated, validateRequest, deliveryController.updateDelivery);
-router.delete('/:id', isAuthenticated, deliveryController.deleteDelivery);
+router.post('/', validateDelivery.createDelivery, validateRequest, deliveryController.createDelivery);
+router.put('/:id', validateDelivery.updateDelivery, validateRequest, deliveryController.updateDelivery);
+router.delete('/:id', deliveryController.deleteDelivery);
 
 module.exports = router;
