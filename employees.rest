@@ -1,0 +1,48 @@
+### Get all employees
+GET http://localhost:3000/employees
+
+###
+
+### Get a specific movie by ID
+GET http://localhost:3000/employees/679818f4af51eda63ff1f484
+
+###
+
+### Create a new movie (Bad Boys)
+POST http://localhost:3000/employees
+Content-Type: application/json
+
+{
+  "name": "Lucas Adams",
+  "position": "Grocery Clerk",
+  "salary": 31000.00,
+  "hireDate": "2025-02-10",
+  "storeId": "Super Fresh Mart",
+  "status": "Active",
+  "performanceRating": 4.0,
+  "shiftSchedule": "Evening"
+}
+
+###
+
+### Update an existing movie (Bad Boys)
+PUT http://localhost:3000/employees/67aa52ed96f13907317fc6bd
+Content-Type: application/json
+
+{
+  "name": "Lucas A. Adams",
+  "position": "Senior Grocery Clerk",
+  "salary": 35000.00,
+  "hireDate": "2025-02-10",
+  "storeId": "Super Fresh Mart",
+  "status": "Active",
+  "performanceRating": 4.5,
+  "shiftSchedule": "Evening"
+}
+
+###
+
+### Delete a movie by ID
+DELETE http://localhost:3000/employees/67aa52ed96f13907317fc6bd
+
+###

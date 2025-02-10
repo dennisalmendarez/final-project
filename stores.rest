@@ -1,0 +1,50 @@
+### Get all stores
+GET http://localhost:3000/stores
+###
+
+### Get a specific store by ID
+GET http://localhost:3000/stores/679447a2058fc158b61aa74b
+###
+
+### Create a new store
+POST http://localhost:3000/stores
+Content-Type: application/json
+
+{
+  "name": "Almendras Grocers",
+  "description": "A family-owned grocery store serving the local community for years.",
+  "openingDate": "2012-06-14",
+  "daysOfWeekStoreIsClose": "Saturday and Sunday",
+  "status": "Operating",
+  "NumOfEmployees": 5,
+  "NumOfManagers": 1,
+  "popularityInArea": 6,
+  "anualSales": 1700000.65,
+  "averageCustomerPerAge": 42.0,
+  "deliveryService": true
+}
+
+###
+
+### Update an store by ID
+PUT http://localhost:3000/stores/67aa56fa96f13907317fc6be
+Content-Type: application/json
+
+{
+  "name": "Almendras Grocers",
+  "description": "A family-owned grocery store serving the local community for years.",
+  "openingDate": "2013-06-14",
+  "daysOfWeekStoreIsClose": "Saturday and Sunday",
+  "status": "Closed",
+  "NumOfEmployees": 5,
+  "NumOfManagers": 1,
+  "popularityInArea": 7.1,
+  "anualSales": 1800000.65,
+  "averageCustomerPerAge": 42.0,
+  "deliveryService": false
+}
+###
+
+### Delete an store by ID
+DELETE http://localhost:3000/stores/67959289bc3844b95c3b6765
+###
