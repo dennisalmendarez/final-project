@@ -15,7 +15,7 @@ const getAll = async (req, res) => {
 const getSingle = async (req, res) => {
     //#swagger.tags = ['Stores']
     try {
-        costoreId = new ObjectId(req.params.id);
+        const storeId = new ObjectId(req.params.id);
         const result = await mongodb.getDatabase().db().collection('Stores').findOne({ _id: storeId });
 
         if (!result) {
