@@ -5,7 +5,7 @@
     "description": "API for managing stores.",
     "version": "1.0.0"
   },
-  "host": "cse-341-project-2-j6y0.onrender.com",
+  "host": "https://final-project-cb6l.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
