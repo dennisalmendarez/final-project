@@ -10,13 +10,6 @@
   "schemes": [
     "https"
   ],
-  "securityDefinitions": {
-    "SessionAuth": {
-      "type": "apiKey",
-      "name": "Cookie",
-      "in": "header"
-    }
-  },
   "consumes": [
     "application/json"
   ],
@@ -788,10 +781,5 @@
         }
       }
     }
-  },
-  "security": [
-    {
-      "SessionAuth": []
-    }
-  ]
+  }
 }

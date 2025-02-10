@@ -9,16 +9,6 @@ const doc = {
     schemes: ['https'],
     consumes: ["application/json"],
     produces: ["application/json"],
-    securityDefinitions: {
-        SessionAuth: {
-            type: "apiKey",
-            name: "Cookie",
-            in: "header"
-        }
-    },
-    security: [
-        { SessionAuth: [] }
-    ],
 };
 
 const outputFile = './swagger.json';
