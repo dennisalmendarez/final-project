@@ -1,0 +1,46 @@
+### Get all employees
+GET http://localhost:3000/delivery
+
+###
+
+### Get a specific movie by ID
+GET http://localhost:3000/delivery/679818f4af51eda63ff1f484
+
+###
+
+### Create a new movie (Bad Boys)
+POST http://localhost:3000/delivery
+Content-Type: application/json
+
+{
+  "orderId": "ORD011",
+  "customerName": "Mark Johnson",
+  "address": "742 Evergreen Terrace, Springfield, IL 62704",
+  "deliveryDate": "2025-02-25",
+  "status": "Pending",
+  "courier": "FreshMart",
+  "estimatedTime": "3:00 PM - 5:00 PM"
+}
+
+###
+
+### Update an existing movie (Bad Boys)
+PUT http://localhost:3000/delivery/67aa52ed96f13907317fc6bd
+Content-Type: application/json
+
+{
+  "orderId": "ORD011",
+  "customerName": "Mark Tonson",
+  "address": "742 Evergreen Terrace, Springfield, IL 62704",
+  "deliveryDate": "2025-02-28",
+  "status": "Delivered",
+  "courier": "FreshMart",
+  "estimatedTime": "3:00 PM - 5:00 PM"
+}
+
+###
+
+### Delete a movie by ID
+DELETE http://localhost:3000/delivery/67aa52ed96f13907317fc6bd
+
+###

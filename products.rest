@@ -1,46 +1,46 @@
 ### Get all employees
-GET http://localhost:3000/delivery
+GET http://localhost:3000/products
 
 ###
 
 ### Get a specific movie by ID
-GET http://localhost:3000/delivery/679818f4af51eda63ff1f484
+GET http://localhost:3000/products/679818f4af51eda63ff1f484
 
 ###
 
 ### Create a new movie (Bad Boys)
-POST http://localhost:3000/delivery
+POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "orderId": "ORD011",
-  "customerName": "Mark Johnson",
-  "address": "742 Evergreen Terrace, Springfield, IL 62704",
-  "deliveryDate": "2025-02-25",
-  "status": "Pending",
-  "courier": "FreshMart",
-  "estimatedTime": "3:00 PM - 5:00 PM"
+  "name": "Fresh Salmon Fillet",
+  "description": "Premium-quality, wild-caught salmon fillet, sold per pound.",
+  "price": 12.99,
+  "category": "Seafood",
+  "stock": 75,
+  "storeId": "store004",
+  "isAvailable": true
 }
 
 ###
 
 ### Update an existing movie (Bad Boys)
-PUT http://localhost:3000/delivery/67aa52ed96f13907317fc6bd
+PUT http://localhost:3000/products/67aa52ed96f13907317fc6bd
 Content-Type: application/json
 
 {
-  "orderId": "ORD011",
-  "customerName": "Mark Tonson",
-  "address": "742 Evergreen Terrace, Springfield, IL 62704",
-  "deliveryDate": "2025-02-28",
-  "status": "Delivered",
-  "courier": "FreshMart",
-  "estimatedTime": "3:00 PM - 5:00 PM"
+  "name": "Fresh Salmon Fillet",
+  "description": "Premium-quality, wild-caught salmon fillet, sold per pound.",
+  "price": 6.99,
+  "category": "Seafood",
+  "stock": 14,
+  "storeId": "store004",
+  "isAvailable": true
 }
 
 ###
 
 ### Delete a movie by ID
-DELETE http://localhost:3000/delivery/67aa52ed96f13907317fc6bd
+DELETE http://localhost:3000/products/67aa52ed96f13907317fc6bd
 
 ###
